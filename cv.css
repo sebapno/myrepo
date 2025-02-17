@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+@media print {
+    body, html {
+        width: 100%;
+        height: auto !important;
+        overflow: visible !important;
+    }
+    .container {
+        height: auto !important;
+    }
+    .left_content, .right_content {
+        page-break-before: avoid !important;
+        page-break-inside: avoid !important;
+        page-break-after: avoid !important;
+    }
+    /* Ensures that job titles (like 'Sole Trader') don't break from their content */
+    .job {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+    /* Adds extra space at the beginning of page 2 */
+    .job:first-of-type {
+        margin-top: 40px !important; /* Adjust as needed */
+    }
+}
+
+
+
+/*  Resets default browser spacing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* common variables */
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    margin-top: 2.5rem;
+}
+
+.description{
+    font-size:16px;
+    font-weight: 200;
+    margin-top: 0.5rem;
+    margin-right: 4rem;
+    list-style:none;
+}
+
+.description_logo{
+    font-size:16px;
+    font-weight: 200;
+    margin-top: 0.5rem;
+    margin-right: 4rem;
+    list-style:none;
+    line-height: 1.7;
+}
+
+.work_description{
+    font-size:16px;
+    font-weight: 200;
+    margin-top: 0.5rem;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.flag {
+    width: 25px; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle; /* Align flag with text */
+}
+
+.right_content{
+    margin-right: 3rem;
+    
+}
+
+.left_content{
+    margin-left: 3rem;
+    max-width: 253px;
+
+}
+
+:root {
+    --primary-color: black;
+    --text-color: #727171;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #fff;
+}
+
+img {
+    width: 250px;
+}
+
+a {
+    text-decoration: none;
+    color:  black;
+}
+
+a:hover {
+    color: #4BB2F2;
+}
+
+.job-title{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.company{
+    font-weight: 200;
+    font-size: 16px;
+    margin-top: 0.2rem;
+}
+
+
+.container {
+    max-width: 1000px; /* Limits width */
+    width: 100%; /* Makes layout responsive */
+    display: grid;
+    margin-bottom: 1rem;
+    margin-right: 4rem;
+    margin-top:1rem;
+    background-color: #fff;
+    grid-template-columns: 1fr 2fr; /*  Adjusts image/text ratio */
+}
+
+.profile {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+}
+
+.profile_container {
+    display: flex;
+    align-items: center; /*  Ensures text aligns with image */
+    gap: 3rem; /* Reduces space between image and text */
+}
+
+.profile_text{
+    font-size: 20px;
+    margin-left: -1rem;
+}
+
+.profile_img{
+    margin-left: 2rem;
+
+}
+
+.first_name{
+    font-weight: 300;
+}
+
+.last_name{
+    font-weight: 600;
+
+}
+
+.profile_title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.first_work_title{
+    margin-top: 0.5rem;
+}
+
+.certificate_description{
+    font-size:16px;
+    font-weight: 200;
+    margin-top: 0.5rem;
+    padding-left: 20px;
+    list-style:disc;
+}
+
+.university_description{
+    font-size:16px;
+    font-weight: 200;
+    margin-top: 0.5rem;
+    margin-right: 4rem;
+    list-style:none;
+}
+
+.university{
+    font-weight: 300;
+}
+.university2{
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
